@@ -1,5 +1,7 @@
 # CMake build file for SACD Extract
 
+set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE INTERNAL "" FORCE)
+
 cmake_minimum_required(VERSION 2.6)
 
 # Mingw-w64 support
