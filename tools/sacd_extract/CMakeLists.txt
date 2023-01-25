@@ -1,7 +1,5 @@
 # CMake build file for SACD Extract
 
-set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE INTERNAL "" FORCE)
-
 cmake_minimum_required(VERSION 2.6)
 
 # Mingw-w64 support
@@ -45,6 +43,8 @@ else(${GIT_REPO_URL_RESULT} GREATER 0)
 endif(${GIT_REPO_URL_RESULT} GREATER 0)
 
 project(sacd_extract C)
+
+set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE INTERNAL "" FORCE)
 
 # Load some macros.
 SET(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules;${CMAKE_MODULE_PATH}")
